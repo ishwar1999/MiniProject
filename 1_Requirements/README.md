@@ -43,7 +43,7 @@ The problem was known because of the inconvinience caused to store student infor
 4.	User  will be given permission to search student records -> Implemented
 5.	User  will be given permission to delete student records -> Implemented
 
-###Low level Requirements:
+### Low level Requirements:
 
 1. user will be given permission to add their details such as Id, Name, Address etc -> Implemented
 2.  user  will be given permission to the ID to search records in the system. He will be then able to see the details of the student corresponding to the student ID ->	Implemented
