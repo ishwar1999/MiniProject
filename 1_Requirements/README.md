@@ -33,3 +33,17 @@ The problem is prsesent in all the educational institutions.
 
 ### How: 
 The problem was known because of the inconvinience caused to store student information in large scale there can be loss of record, destructon of record etc.
+
+Detail requirements
+High Level Requirements:
+ID	DESCRIPTION	STATUS
+S1	User shall be able to add student records	Implemented
+S2	User shall be able to modify student records	Implemented
+S3	User shall be able to search student records	Implemented
+S4	User shall be able to delete student records	Implemented
+Low level Requirements:
+ID	DESCRIPTION	Reference ID	STATUS
+L1	The user will be asked to enter their details such as Id, Name, Address and Class	S1	Implemented
+L2	The user will be asked to enter the ID to search records in the system. He will be then able to see the details of the student corresponding to the student ID	S2	Implemented
+L3	The user will be asked to enter the particular Id which he wants to modify and then the user will be asked to enter new details such as Id, Name, Address and Class	S3	Implemented
+L4	The user will be asked to enter the Student record Id that he wants to delete. That particular record will be deleted	S4	Implemented
