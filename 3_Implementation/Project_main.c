@@ -1,11 +1,31 @@
+/**
+ * @file main.h
+ * @author ISHWAR KUBASAD (kubsadishwar@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-16
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include<stdio.h>
 #include<stdlib.h>
+/**
+ * @brief student structure creation
+ * 
+ */
 struct student
 {
    int roll,m1,m2,tot;
    char name[10],add[50],cont[10];
    float per;
 };
+/**
+ * @brief display function
+ * 
+ * @param s 
+ * @param n 
+ */
 void display(struct student *s,int n)
 {
     int i;
@@ -14,14 +34,27 @@ void display(struct student *s,int n)
         printf("\n%d %s %d %d %d %f %s %s",s[i].roll,s[i].name,s[i].m1,s[i].m2,s[i].tot,s[i].per,s[i].cont,s[i].add);
     }
 }
+/**
+ * @brief 
+ * 
+ * @return int 
+ */
 int main()
 {
     struct student *s;
+    /**
+     * @brief structure for student
+     * 
+     */
     int i,n,choice,rno,f=0;
         int choice1;
         printf("enter the number of student");
         scanf("%d",&n);
         s=(struct student*)malloc(sizeof(struct student)*n);
+        /**
+         * @brief for loop to take input values
+         * 
+         */
         for(i=0;i<n;i++)
         {
             printf("enter the roll no,name,m1,m2,contact no and address");
@@ -33,6 +66,10 @@ int main()
         {
             printf("\n1.display\n2.search\n3.modify\n4.delete\n5.exit");
             scanf("%d",&choice);
+            /**
+             * @brief Construct a new switch object
+             * 
+             */
             switch(choice)
             {
                 case 1:
@@ -114,6 +151,10 @@ int main()
 
         }
         }
+        /**
+         * @brief 
+         * 
+         */
         while(choice!=5);
 
 
